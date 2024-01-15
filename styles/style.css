@@ -253,7 +253,7 @@ nav{
 }
 
 /* Destination related style */
-.destination-header{
+.destination-header, .choose-header{
     max-width: 643px;
     margin: 0 auto;
 }
