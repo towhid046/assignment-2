@@ -1,9 +1,8 @@
 /* fonts form google font */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
 /* shared styles */
-body{
+html{
     font-family: 'Mulish', sans-serif;
-    font-size: 16px;
 }
 *{
     margin: 0;
@@ -11,6 +10,7 @@ body{
     box-sizing: border-box;
 }
 :root{
+    font-size: 16px;
     --primary-color:#FF5400;
     --color-white:#fafafa;
     --color-gray:#808080;
@@ -128,7 +128,7 @@ nav .logo > img{
     width: 48px;
     cursor: pointer;
 }
-nav .logo  h2{
+nav .logo > h2{
     color: var(--heading-color);
     font-weight: var(--fw-extraBold);
     font-size: 2.12rem;
@@ -178,6 +178,7 @@ nav{
     background-image: url('/Images/banner-bg-img.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     border-radius: 1rem;
 }
 .banner-wrapper{
@@ -247,7 +248,7 @@ nav{
 }
 .readMore-btn{
     width: max-content;
-    padding: 14px 34px;
+    padding: .8rem 2rem;
     font-size: 1.25rem;
     font-weight: var(--fw-extraBold);
 }
@@ -264,9 +265,49 @@ nav{
     margin-bottom: 1.25rem;
 }
 
+/* choose box related stule */
+.choose-header .section-paragraph{
+    margin-bottom: 3rem;
+}
+.choose-boxes{
+    flex-wrap: wrap;
+}
+.choose-box{
+    padding: 2rem;
+    width: 48%;
+    border-radius: 1rem;
+}
+.choose-box1{
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.choose-box2{
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.choose-box3{
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.choose-box img{
+    width: 4rem;
+    margin-bottom: 2rem;
+}
+.choose-box h3{
+    color: var(--heading-color);
+    font-weight: var(--fw-extraBold);
+    font-size: 1.5rem;
+}
+
+/* Responsive related styles */
+/* media query for small devices */
+.hide{
+    display: none;
+}
 @media screen and (max-width:600px) {
-    nav > h2{
-        font-size: 1.5rem;
+    :root{
+        font-size: 14px;
     }
     .nav-menu{
         flex-direction: column;
@@ -292,4 +333,95 @@ nav{
     #check:checked ~ .nav-menu{
         right: 0;
     }
+    .banner-content > h1{
+        font-size: 1.8rem;
+        margin-bottom: .8rem;
+    }
+    .banner-form form{
+        grid-template-columns: auto;
+    }
+    .banner{
+        background-position: center;
+    }
+    .py-50{
+        padding-top: 30px;
+        padding-bottom:30px ;
+    }
+    .mb-100{
+        margin-bottom: 50px;
+    }
+    .tours-article,
+    .row,
+    .choose-boxes
+    {
+        flex-direction: column;
+    }
+    .choose-box{
+        width: 100%;
+    }
+    .row img{
+        width: 100%;
+    }
+
+}
+
+
+/* media querry for medium devices */
+@media screen and (min-width:601px) and (max-width: 992px) {
+    :root{
+        font-size: 15px;
+    }
+    .nav-menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--heading-color);
+        gap: 30px;
+        width: 80%;
+        border-radius: 10px;
+        height:100vh;
+        position: fixed;
+        right: -100%;
+        top: 0;
+        z-index: 200;
+        transition: .5s ease-in-out;
+    }
+    .nav-menu > li > a{
+        color: var(--color-white);
+    }
+    .open-menu, .close-menu{
+        display: block;
+    }
+    #check:checked ~ .nav-menu{
+        right: 0;
+    }
+    .banner-content > h1{
+        font-size: 2rem;
+        margin-bottom: .8rem;
+    }
+    .banner-form form{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .banner{
+        background-position: center;
+    }
+    .py-50{
+        padding-top: 30px;
+        padding-bottom:30px ;
+    }
+    .mb-100{
+        margin-bottom: 60px;
+    }
+    .tours-article
+    {
+        flex-direction: column;
+    }
+    .row{
+        justify-content: center;
+    }
+    .row > img{
+        max-width: 30%;
+    }
+
+    
 }
