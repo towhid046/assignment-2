@@ -1,0 +1,295 @@
+/* fonts form google font */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
+/* shared styles */
+body{
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#FF5400;
+    --color-white:#fafafa;
+    --color-gray:#808080;
+    --color-dark-gray:#424247;
+    --color-light-dark:#13131880;;
+    --color-light-gray:#ffffff4d;;
+    --color-pink:#fab1a0;
+    --heading-color:#131318;
+    --paragraph-color:#131318b3;
+    --paragraph2-color:#5A5A5D;
+    /* font size */
+    /* font-weight */
+    --fw-light:300;
+    --fw-regular:400;
+    --fw-medium:500;
+    --fw-semiBold:600;
+    --fw-bold:700;
+    --fw-extraBold:800;
+}
+img{
+    max-width: 100%;
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1170px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.section-heading{
+    font-size: 2.5rem;
+    font-weight: var(--fw-extraBold);
+    color: var(--heading-color);
+    margin-bottom: 1.5rem;
+}
+.section-paragraph, .section-paragraph2{
+    font-size: 1rem;
+    color: var(--paragraph-color);
+    font-weight: var(--fw-regular);
+    line-height: 1.64rem;
+}
+.section-paragraph2{
+    color: var(--paragraph2-color);
+}
+/* custom display flex related style */
+.d-flex{
+    display: flex;
+}
+.fd-column{
+    flex-direction: column;
+}
+
+.jc-center{
+    justify-content: center;
+}
+.jc-sb{
+    justify-content: space-between;
+}
+
+.ai-center{
+    align-items: center;
+}
+
+/* custom grid related style */
+.d-grid{
+    display: grid;
+}
+.gtc-repeat-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+.gtc-repeat-4{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* custom gap style */
+.gap-10{
+    gap: 10px;
+}
+.gap-20{
+    gap: 1.25rem;
+}
+.gap-30{
+    gap: 1.85rem;
+}
+.gap-40{
+    gap: 2.5rem;
+}
+.gap-50{
+    gap: 3.12rem;
+}
+/* custom padding related style */
+.py-50{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.py-100{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/* custom text-align center  */
+.text-center{
+    text-align: center;
+}
+/* custom margin related style */
+.mb-100{
+    margin-bottom: 100px;
+}
+/* header related style */
+/* nav related styles */
+nav .logo > img{
+    width: 48px;
+    cursor: pointer;
+}
+nav .logo  h2{
+    color: var(--heading-color);
+    font-weight: var(--fw-extraBold);
+    font-size: 2.12rem;
+}
+nav .logo > h2 > span{
+    color: var(--primary-color);
+}
+.nav-menu > li > a{
+    font-size: 1.12rem;
+    color: var(--color-dark-gray);
+}
+.nav-menu > li > a:hover{
+    font-weight: var(--fw-bold);
+    color: var(--primary-color);
+}
+
+/* hamberger menu */
+nav{
+    position: relative;
+}
+#check{
+    display: none;
+}
+.nav-menu{
+    position: relative;
+}
+.open-menu, 
+.close-menu{
+    font-size: 1.5rem;
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+.open-menu{
+    top: 55px;
+    right: 0;
+}
+.close-menu{
+    top: 50px;
+    right: 22px;
+    color: var(--color-white);
+}
+
+
+/* Banner related style  */
+.banner{
+    background-image: url('/Images/banner-bg-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+}
+.banner-wrapper{
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    border-radius: 1rem;
+}
+.banner-content {
+    max-width: 676px;
+    padding: 0 1rem;
+}
+.banner-content > h1{
+    font-weight: var(--fw-extraBold);
+    font-size: 4rem;
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
+}
+.banner-content > p{
+    color: var(--color-white);
+    font-weight: var(--fw-regular);
+    font-size: 1rem;
+}
+
+.banner-form{
+    background-color:var(--color-light-gray);
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 800px;
+    margin-top: 3rem;
+}
+.banner-form form{
+    gap: 1.5rem;
+}
+
+.banner-form form > input, select, button{
+    border: none;
+    padding: 1rem;
+    color: var(--color-light-dark);
+    font-weight: var(--fw-regular);
+    border-radius: 0.5rem;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.primary-btn{
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    font-weight: var(--fw-bold);
+    cursor: pointer;
+}
+.primary-btn > span{
+    font-size: 1rem;
+}
+
+/* Tours section related style */
+
+.tours-content > ul > li{
+    list-style: disc;
+    margin:0 0 .5rem 1rem;
+
+}
+.tours-content .section-paragraph {
+    margin-bottom: 1.5rem;
+}
+.tours-content .section-paragraph2 {
+    margin-bottom: 2rem;
+}
+.readMore-btn{
+    width: max-content;
+    padding: 14px 34px;
+    font-size: 1.25rem;
+    font-weight: var(--fw-extraBold);
+}
+
+/* Destination related style */
+.destination-header{
+    max-width: 643px;
+    margin: 0 auto;
+}
+.destination .section-paragraph{
+    margin-bottom: 2rem;
+}
+.row{
+    margin-bottom: 1.25rem;
+}
+
+@media screen and (max-width:600px) {
+    nav > h2{
+        font-size: 1.5rem;
+    }
+    .nav-menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--heading-color);
+        gap: 30px;
+        width: 100%;
+        border-radius: 10px;
+        height:100vh;
+        position: fixed;
+        right: -100%;
+        top: 0;
+        z-index: 200;
+        transition: .5s ease-in-out;
+    }
+    .nav-menu > li > a{
+        color: var(--color-white);
+    }
+    .open-menu, .close-menu{
+        display: block;
+    }
+    #check:checked ~ .nav-menu{
+        right: 0;
+    }
+}

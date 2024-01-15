@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Nest</title>
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/responsive.css" />
+  </head>
+  <body>
+    <header class="container mb-100">
+      <!-- nav bar -->
+      <nav class="nav d-flex ai-center jc-sb py-50">
+        <div class="logo d-flex ai-center gap-20">
+          <img src="/images/logo.png" alt="" />
+          <h2>Explore <span>Nest</span></h2>
+        </div>
+
+        <!-- nav menu -->
+        <label class="open-menu" for="check">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <input id="check" type="checkbox" />
+        <ul class="nav-menu d-flex ai-center gap-40">
+          <label class="close-menu" for="check">
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+          <li><a href="">Home</a></li>
+          <li><a href="">Packages</a></li>
+          <li><a href="">Testimonial</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- banner -->
+      <div class="banner">
+        <div class="banner-wrapper d-flex ai-center fd-column py-100">
+          <div class="banner-content text-center">
+            <h1>Explore Your Travel</h1>
+            <p>
+              Embark on a journey of exploration and discovery with our
+              captivating travel experiences. Unveil the world's wonders today!
+            </p>
+          </div>
+          <!-- banner form -->
+          <div class="banner-form">
+            <form class="d-grid gtc-repeat-4 gap-20" action="">
+              <input type="text" placeholder="Where go" />
+              <label for="when">
+                <select id="when">
+                  <option value="">When</option>
+                  <option value="">20/01/2024</option>
+                  <option value="">21/01/2024</option>
+                  <option value="">22/01/2024</option>
+                </select>
+              </label>
+              <label for="select-type">
+                <select id="select-type">
+                  <option value="">Slect Type</option>
+                  <option value="">Bus</option>
+                  <option value="">Plane</option>
+                  <option value="">Thelagari</option>
+                </select>
+              </label>
+              <button class="primary-btn d-flex jc-center gap-10">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Find New</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer></footer>
+  </body>
+</html>
