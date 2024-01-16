@@ -22,6 +22,7 @@ html{
     --paragraph-color:#131318b3;
     --paragraph2-color:#5A5A5D;
     --color-light:#1313181a;;
+    --footer-bg-color:#f3f3f3;
     /* font size */
     /* font-weight */
     --fw-light:300;
@@ -125,16 +126,16 @@ a{
 }
 /* header related style */
 /* nav related styles */
-nav .logo > img{
+.logo img{
     width: 48px;
     cursor: pointer;
 }
-nav .logo > h2{
+.logo  h2{
     color: var(--heading-color);
     font-weight: var(--fw-extraBold);
     font-size: 2.12rem;
 }
-nav .logo > h2 > span{
+.logo h2  span{
     color: var(--primary-color);
 }
 .nav-menu > li > a{
@@ -362,6 +363,28 @@ nav{
     font-weight: var(--fw-extraBold);
 }
 
+/* footer related style */
+.footer-container{
+    max-width: 872px;
+    padding: 0 1.25rem;
+    margin: 0 auto;
+    text-align: center;
+}
+footer{
+    padding: 6rem 0;
+    background-color:var(--footer-bg-color);
+}
+footer hr{
+    background-color: var(--color-dark-light);
+    margin: 3rem 0;
+}
+footer .section-paragraph2{
+    margin: 1rem 0 2rem 0;
+}
+footer .social-icons> li > a{
+    color: var(--heading-color);
+    font-size: 1.5rem;
+}
 /* Responsive related styles */
 /* media query for small devices */
 @media screen and (max-width:600px) {
@@ -402,7 +425,7 @@ nav{
     .banner{
         background-position: center;
     }
-    .py-50{
+    .py-50, footer{
         padding-top: 30px;
         padding-bottom:30px ;
     }
@@ -471,14 +494,15 @@ nav{
     .banner{
         background-position: center;
     }
-    .py-50{
-        padding-top: 30px;
-        padding-bottom:30px ;
+    .py-50, footer{
+        padding-top: 40px;
+        padding-bottom:40px ;
     }
     .mb-100{
         margin-bottom: 60px;
     }
-    .tours-article
+    .tours-article,
+    .newsletter
     {
         flex-direction: column;
     }
@@ -488,6 +512,18 @@ nav{
     .row > img{
         max-width: 30%;
     }
-
+    .newsletter-image, .newsletter-subscribe{
+        text-align: center;
+    }
+    .newsletter-subscribe{
+        width: 85%;
+    }
+    .newsletter-image{
+        width: 100%;
+    }
+    .newsletter-img-website-link{
+        bottom: 3.4rem;
+        right: 4.4rem;
+    }
     
 }
