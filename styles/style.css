@@ -402,7 +402,7 @@ footer .social-icons> li > a{
     font-size: 1.5rem;
 }
 
-/* secial deals section reladed style */
+/* deals section reladed style */
 .deals-header{
     max-width:643px ;
     margin: 0 auto;
@@ -417,6 +417,9 @@ footer .social-icons> li > a{
     padding: 3.5rem;
     border-radius: 1rem;
     margin-bottom: 1.5rem;
+}
+.deal-box2{
+    background-image: url('/images/deals-img-2.png');
 }
 .row-reverse{
     flex-direction: row-reverse;
@@ -439,13 +442,52 @@ footer .social-icons> li > a{
     font-size: 1.25rem;
     font-weight: var(--fw-extraBold);
 }
-
+.deal-box-card > ul >li{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--paragraph2-color);
+    font-size: 1rem;
+    font-weight: var(--fw-regular);
+}
+.deal-box-card > ul >li>i{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
 .deal-box-card > .primary-btn{
     padding: .8rem 1.4rem;
     font-size: 1.25rem;
     width: max-content;
 }
 
+.deals-boxes > button.primary-btn{
+    width: max-content;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    font-weight: var(--fw-bold);
+    padding: .8rem 1.30rem;
+}
+
+/* Watch section */
+.travel-video{
+    white-space: none;
+    width: 55%;
+    border-radius: 1rem;
+}
+.watch-content > ul{
+    margin-top: 1.25rem ;
+}
+.watch-content > ul > li{
+    font-weight: var(--fw-bold);
+    color: var(--heading-color);
+    list-style: disc;
+    margin-left: .8rem;
+    margin-bottom: 1rem;
+}
+.watch-content > ul + p{
+    margin-bottom: 1.5rem;
+}
 /* Responsive related styles */
 /* media query for small devices */
 @media screen and (max-width:600px) {
@@ -489,6 +531,9 @@ footer .social-icons> li > a{
     .banner{
         background-position: center;
     }
+    .banner-form{
+        width: 80%;
+    }
     .py-50, footer{
         padding-top: 30px;
         padding-bottom:30px ;
@@ -499,23 +544,22 @@ footer .social-icons> li > a{
     .tours-article,
     .row,
     .choose-boxes,
-    .newsletter
+    .newsletter,
+    .watch-article
     {
         flex-direction: column;
     }
-    .newsletter-image{
+    .newsletter-image, 
+    .travel-video{
         width: 100%;
     }
     .newsletter-img-website-link{
         padding: 1.25rem;
     }
-    .choose-box{
-        width: 100%;
-    }
-    .row img{
-        width: 100%;
-    }
-    .deal-box-card{
+    .deal-box-card, 
+    .row  img, 
+    .choose-box
+    {
         width: 100%;
     }
     .deal-box{
@@ -563,6 +607,9 @@ footer .social-icons> li > a{
     .banner{
         background-position: center;
     }
+    .banner-form{
+        width: 70%;
+    }
     .py-50, footer{
         padding-top: 40px;
         padding-bottom:40px ;
@@ -571,7 +618,8 @@ footer .social-icons> li > a{
         margin-bottom: 60px;
     }
     .tours-article,
-    .newsletter
+    .newsletter,
+    .watch-article
     {
         flex-direction: column;
     }
@@ -584,10 +632,14 @@ footer .social-icons> li > a{
     .newsletter-image, .newsletter-subscribe{
         text-align: center;
     }
-    .newsletter-subscribe{
+    .newsletter-subscribe, 
+    .watch-content,
+    .travel-video
+    {
         width: 85%;
     }
-    .newsletter-image{
+    .newsletter-image
+    {
         width: 100%;
     }
     .newsletter-img-website-link{
@@ -596,5 +648,8 @@ footer .social-icons> li > a{
     }
     .deal-box-card{
         width: 100%;
+    }
+    .row h2{
+        display: none;
     }
 }
