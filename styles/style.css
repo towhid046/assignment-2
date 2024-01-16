@@ -538,6 +538,10 @@ footer .social-icons> li > a{
         padding-top: 30px;
         padding-bottom:30px ;
     }
+    .py-100{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
     .mb-100{
         margin-bottom: 50px;
     }
@@ -564,6 +568,9 @@ footer .social-icons> li > a{
     }
     .deal-box{
         padding: 8rem 1.25rem 1.25rem 1.25rem;
+    }
+    .deal-box-card > ul{
+        flex-wrap: wrap;
     }
 }
 
