@@ -267,7 +267,21 @@ nav{
 .row{
     margin-bottom: 1.25rem;
 }
+.row-img{
+    position: relative;
+}
+.row-img > h2{
+    font-weight: var(--fw-extraBold);
+    color: var(--color-white);
+    font-size: 1.8rem;
+    position: absolute;
+    left: 35%;
+    top: 42%;
+}
 
+.north-america > h2, .kasmir > h2{
+    left: 27%;
+}
 /* choose box related stule */
 .choose-header .section-paragraph{
     margin-bottom: 3rem;
@@ -301,6 +315,7 @@ nav{
     color: var(--heading-color);
     font-weight: var(--fw-extraBold);
     font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /* Newsletter reladed styles */
@@ -460,6 +475,9 @@ footer .social-icons> li > a{
     }
     #check:checked ~ .nav-menu{
         right: 0;
+    }
+    .kasmir > h2{
+        left: 38%;
     }
     .banner-content > h1{
         font-size: 1.8rem;
