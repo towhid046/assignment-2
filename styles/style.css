@@ -15,6 +15,7 @@ html{
     --color-white:#fafafa;
     --color-light-white: #ffffffcc;
     --color-gray:#808080;
+    --color-green:#1d7c48;
     --color-dark-gray:#424247;
     --color-light-dark:#13131880;;
     --color-light-gray:#ffffff4d;;
@@ -510,32 +511,32 @@ footer .social-icons> li > a{
 .appStore{
     display: flex;
     align-items: center;
-    padding: 18px 22px;
-    background: #fff;
+    padding: 1.05rem 1.30rem;
+    background: var(--color-white);
     border-radius: .8rem;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     transition: .4s;
   
 }
 .appStore img{
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 .playStore img{
-    width:33px ;
+    width:2rem ;
 }
 .appleStore img{
-    width:35px ;
+    width:2.1rem ;
 }
 .appStore span{
-    color: #2E2E2E;
+    color: var(--color-dark-gray);
     font-size: 1.25rem;
-    font-weight: var(--fw-semiBold);
+    font-weight: var(--fw-bold);
 }
 .appleStore:hover{
     background: var(--heading-color);
 }
 .playStore:hover{
-    background: #1d7c48;
+    background: var(--color-green);
 }
 
 .appStore:hover span{ 
