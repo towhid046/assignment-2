@@ -142,9 +142,9 @@ a{
 .nav-menu > li > a{
     font-size: 1.12rem;
     color: var(--color-dark-gray);
+    transition: .4s;
 }
 .nav-menu > li > a:hover{
-    font-weight: var(--fw-bold);
     color: var(--primary-color);
 }
 
@@ -166,11 +166,11 @@ nav{
     cursor: pointer;
 }
 .open-menu{
-    top: 55px;
+    top: 3rem;
     right: 0;
 }
 .close-menu{
-    top: 50px;
+    top: 2.8rem;
     right: 22px;
     color: var(--color-white);
 }
@@ -609,7 +609,7 @@ footer .social-icons> li > a{
     .choose-boxes,
     .newsletter,
     .watch-article,
-    .mobile-app-wrapper
+    .mobile-apps-link-wrapper
     {
         flex-direction: column;
     }
@@ -634,6 +634,14 @@ footer .social-icons> li > a{
     .deal-box-card > ul{
         flex-wrap: wrap;
     }
+    .mobile-app-wrapper{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .mobile-app-image{
+        text-align: center;
+    }
+    
 }
 
 
@@ -720,5 +728,11 @@ footer .social-icons> li > a{
     }
     .row h2{
         display: none;
+    }
+    .mobile-app-wrapper{
+        flex-direction: column-reverse;
+    }
+    .mobile-app-image{
+        text-align: center;
     }
 }
